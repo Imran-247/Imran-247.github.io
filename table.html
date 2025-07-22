@@ -5,15 +5,34 @@
   table {
     border-collapse: collapse;
     width: 100%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
   }
   th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align:left;
+    border: 1px solid #e5e7eb;
+    padding: 16px 12px;
+    text-align: left;
+    font-size: 1rem;
   }
   th {
-    background-color: #f0f0f0;
-    }
+    background-color: #3b82f6;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  tr:nth-child(even) td {
+    background-color: #f3f4f6;
+  }
+  tr:hover td {
+    background-color: #e0e7ff;
+    transition: background 0.2s;
+  }
+  td {
+    color: #334155;
+  }
 </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
