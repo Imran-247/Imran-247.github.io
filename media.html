@@ -3,71 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-      body {
-        background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
-        font-family: 'Segoe UI', Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      .container {
-        background: #fff;
-        border-radius: 16px;
-        box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-        padding: 32px 24px;
-        margin-top: 48px;
-        max-width: 600px;
-        width: 100%;
-        text-align: center;
-      }
-      h1 {
-        color: #3b82f6;
-        margin-bottom: 16px;
-      }
-      p {
-        color: #334155;
-        margin-bottom: 32px;
-      }
-      .media {
-        margin-bottom: 32px;
-      }
-      img, video {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-      }
-      audio {
-        width: 100%;
-      }
-    </style>
+    <title>My Page</title>
 </head>
 <body>
-    <div class="container">
+    <main>
+        <header>
       <h1>Welcome to my page</h1>
-      <p>My name is Imran Oamen Olorunwa, a student at Altschool Africa studying Frontend Engineering.</p>
-      <p>I am based in Nigeria, passionate about web development and technology. I enjoy learning new skills and building creative projects. My goal is to become a skilled frontend engineer and contribute to innovative solutions.</p>
-      <div class="media">
-        <picture>
-          <source srcset="assets/images/mobile.jpg" media="(max-width: 600px)">
-          <source srcset="assets/images/tablet.jpg" media="(max-width: 1024px)">
-          <source srcset="assets/images/laptop.jpg" media="(min-width: 1025px)">
-          <img src="assets/images/My pics.jpg" alt="Imran Oamen pics" style="width:200px; height:200px; border-radius:50%; border:2px solid #3b82f6;">
-        </picture>
-      </div>
-      <div class="media">
-        <video src="assets/video/imran.mp4" width="320" height="160" controls>
-        </video>
-      </div>
-      <div class="media">
-        <audio src="assets/audio/intro.opus" controls>
-        </audio>
-      </div>
-    </div>
-</body>
-</html>
+        </header>
+        <section>
+            <p>My name is Imran Oamen Olorunwa, a student at Altschool Africa studying Frontend Engineering.</p>
+           <p>I am based in Nigeria, passionate about web development and technology. I enjoy learning new skills and building creative projects. My goal is to become a skilled frontend engineer and contribute to innovative solutions.</p>
+        </section>
+        <section>
+             <figure>
+                <picture>
+                  <!--Source for Mobile Devices (e.g., screens up to 600px wide)-->
+                  <source srcset="assets/images/mobile.jpg" media="(max-width: 600px)">
+                  <!--Source for Tablet Devices (e.g., screens between 610px and 1024px)-->
+                  <source srcset="assets/images/tablet.jpg" media="(max-width: 1024px)">
+                  <!--Source for Laptop Devices (e.g., screens wider than 1024px)-->
+                  <img src="assets/images/My pics.jpg" alt="Imran Oamen pics" style="width: 150px;height: auto;">
+                </picture>
+                <figcaption>Imran Oamen Olorunwa</figcaption> 
+            </figure>
+        </section>
+        <section>
+             <h2>Media Section</h2>
+             <p>
+                Below you will find a short video introduction about myself and an audio story sharing my journey and interests in web development. 
+                Feel free to watch and listen to learn more about me!
+             </p>
+              <div>
+                <h3>Video Introduction</h3>
+                <p>Watch my video introduction where I share my background and interests in web development.</p>
+             <div>
+               <video src="assets/video/imran.mp4" width="320" height="160" controls>
+                Your browser does not support the video tag.
+               </video>
+             </div>
+             <div>
+              <h3>Audio Story</h3>
+              <p>Listen to my audio story where I talk about my journey in web development and what inspires me.</p>
+               <audio src="assets/audio/story.mp3" controls>
+                Your browser does not support the audio element.
+               </audio>
+             </div>
+         </section>
+         </main>
+         <footer>
+           <p>© 2023 Imran Oamen Olorunwa</p>
+        </footer>
+ </body>
+ </html>
