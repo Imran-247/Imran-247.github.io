@@ -19,13 +19,13 @@
         <section>
             <figure>
                 <picture>
-                    <!--Source for Mobile Devices (e.g., screens up to 600px wide)-->
-                    <source srcset="assets/images/mobile.jpg" media="(max-width: 600px)">
-                    <!--Source for Tablet Devices (e.g., screens between 610px and 1024px)-->
-                    <source srcset="assets/images/tablet.jpg" media="(max-width: 1024px)">
-                    <!--Source for Laptop Devices (e.g., screens wider than 1024px)-->
-                    <img src="assets/images/My pics.jpg" alt="Imran Oamen pics" style="width: 150px;height: auto;">
-                </picture>
+                <!-- Source for Mobile Devices (e.g., screens up to 600px wide) -->
+                <source media="(width <= 600px)" srcset="assets/images/mobile.jpg">
+                <!-- Source for Tablet Devices (e.g., screens between 601px and 1024px wide) -->
+                <source media="(width <= 1024px)" srcset="assets/images/tablet.jpg">
+                <!-- Default image for Laptops and larger screens -->
+                <img src="./assets/images/laptop.jpg" alt="My Image" style="width:100%; height:auto;">
+            </picture>
                 <figcaption>Imran Oamen Olorunwa</figcaption> 
             </figure>
         </section>
@@ -39,7 +39,7 @@
             <div>
                 <h3>Video Introduction</h3>
                 <p>Watch my video introduction where I share my background and interests in web development.</p>
-                <video src="assets/video/imran.mp4" width="320" height="160" controls>
+                <video src="assets/video/imran.mp4" width="100%" height="auto" controls>
                     Your browser does not support the video tag.
                </video>
             </div>
